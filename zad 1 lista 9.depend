@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1638909468 source:c:\users\rober\onedrive\pulpit\c++\zad 1 lista 9\main.cpp
+	<iostream>
+	"TextExtractor.h"
+
+1638909269 c:\users\rober\onedrive\pulpit\c++\zad 1 lista 9\include\textextractor.h
+	<string>
+
+1638909691 source:c:\users\rober\onedrive\pulpit\c++\zad 1 lista 9\src\textextractor.cpp
+	"TextExtractor.h"
+	<memory>
+
