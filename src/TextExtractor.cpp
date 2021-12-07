@@ -1,4 +1,4 @@
-#include "TextExtractor.h"
+#include "../include/TextExtractor.h"
 #include <memory>
 
 TextExtractor::TextExtractor()
@@ -19,9 +19,9 @@ TextExtractor::TextExtractor(string text)
 
 }
 
-string* TextExtractor::Exctract()
+array<string, 20> TextExtractor::Exctract()
 {
-    string extractedValues[100];
+    array<string, 20> extractedValues;
     string buffor;
     int currentLocation=0;
     for(int i=0;toParse[i]!=';';i++)
@@ -38,6 +38,11 @@ string* TextExtractor::Exctract()
             }
         }
     }
+
+    if (buffor.length() != 0) {
+        extractedValues[currentLocation] += buffor;
+    }
+
     return extractedValues;
 }
 

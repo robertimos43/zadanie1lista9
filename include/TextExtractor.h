@@ -1,12 +1,14 @@
 #ifndef TEXTEXTRACTOR_H
 #define TEXTEXTRACTOR_H
 #include <string>
+#include <array>
+
 using namespace std;
 
 class TextExtractor
 {
     public:
-        string* Exctract();
+        array<string, 20> Exctract();
         TextExtractor();
         TextExtractor(string text);
         virtual ~TextExtractor();

@@ -1,6 +1,6 @@
 #include <iostream>
-#include "TextExtractor.h"
-
+#include "include/TextExtractor.h"
+#include <array>
 
 
 using namespace std;
@@ -13,9 +13,10 @@ int main()
     string toEvaluate;
     cin>>toEvaluate;
     TextExtractor * extractor = new TextExtractor(toEvaluate);
-    auto extracted=extractor->Exctract();
-    delete extractor;
-    cout<<extracted[0];
 
+    array<string, 20> extracted = extractor -> Exctract();
+    delete extractor;
+
+    cout<<extracted[0];
 }
 
