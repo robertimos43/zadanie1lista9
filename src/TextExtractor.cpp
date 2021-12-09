@@ -19,9 +19,9 @@ TextExtractor::TextExtractor(string text)
 
 }
 
-array<string, 20> TextExtractor::Exctract()
+array<string, 250> TextExtractor::Exctract()
 {
-    array<string, 20> extractedValues;
+    array<string, 250> extractedValues;
     string buffor;
     int currentLocation=0;
     for(int i=0;toParse[i]!=';';i++)

@@ -14,7 +14,7 @@ int main()
     cin>>toEvaluate;
     TextExtractor * extractor = new TextExtractor(toEvaluate);
 
-    array<string, 20> extracted = extractor -> Exctract();
+    array<string, 250> extracted = extractor -> Exctract();
     delete extractor;
 
     cout<<extracted[0];

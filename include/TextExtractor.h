@@ -8,7 +8,7 @@ using namespace std;
 class TextExtractor
 {
     public:
-        array<string, 20> Exctract();
+        array<string, 250> Exctract();
         TextExtractor();
         TextExtractor(string text);
         virtual ~TextExtractor();
