@@ -1,5 +1,4 @@
 #include "../include/TextExtractor.h"
-#include <memory>
 
 TextExtractor::TextExtractor()
 {
@@ -19,7 +18,7 @@ TextExtractor::TextExtractor(string text)
 
 }
 
-array<string, 250> TextExtractor::Exctract()
+array<string, 250> TextExtractor::Extract()
 {
     array<string, 250> extractedValues;
     string buffor;

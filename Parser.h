@@ -2,6 +2,7 @@
 #define PARSER_H
 #include <string>
 #include <array>
+#include <math.h>
 
 using namespace std;
 
@@ -18,10 +19,8 @@ protected:
 private:
 
 	array<string, 250> extractedValues;
-};
-
-class Parser
-{
+	float CalculateBeforeComma(string beforeComma);
+	float CalculateAfterComma(string afterComma);
 };
 
 #endif // PARSER_H
